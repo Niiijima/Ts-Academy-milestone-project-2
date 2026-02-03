@@ -1,0 +1,178 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: #0b1d3a;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(90deg, #061a3a, #0b2c6f);
+  color: white;
+  padding: 4rem 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #1e6fff;
+  color: white;
+}
+
+.primary:hover {
+  background: #1555cc;
+}
+
+.secondary {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* SECTIONS */
+.section {
+  padding: 4rem 0;
+}
+
+.light-bg {
+  background: #f3f7ff;
+}
+
+.center {
+  text-align: center;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+  color: #555;
+}
+
+/* VIDEO */
+.video-card {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* GRID */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* TABLE */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #1e6fff;
+  color: white;
+}
+
+/* FORM */
+.form-grid {
+  display: grid;
+  gap: 1rem;
+  max-width: 700px;
+}
+
+.form-grid input,
+.form-grid textarea {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* FOOTER */
+.footer {
+  background: #061a3a;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: white;
+  margin-left: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
